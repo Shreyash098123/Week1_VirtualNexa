@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+        <li><a href="#post-job">Post a Job</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section 1: Job Listings -->
+    <section id="jobs" class="jobs-section">
+      <h1>Available Jobs</h1>
+      <div class="job-listings">
+        <!-- Sample job -->
+        <div class="job">
+          <h2>Frontend Developer</h2>
+          <p>Company: Tech Solutions</p>
+          <p>Location: Remote</p>
+          <p>Type: Full-time</p>
+          <button class="apply-btn">Apply</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Post a Job -->
+    <section id="post-job" class="post-job-section">
+      <h1>Post a Job</h1>
+      <form id="job-form">
+        <label for="job-title">Job Title:</label>
+        <input type="text" id="job-title" name="job-title" required>
+
+        <label for="company-name">Company Name:</label>
+        <input type="text" id="company-name" name="company-name" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="job-type">Job Type:</label>
+        <select id="job-type" name="job-type">
+          <option value="full-time">Full-time</option>
+          <option value="part-time">Part-time</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
